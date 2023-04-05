@@ -40,7 +40,7 @@ jobs:
     - name: build docker image
       run: |
         # Запуск сборки образа
-        docker build -t infra_workflows:latest -f Dockerfile .
+        docker build -t infra_workflows:latest -f ../../Dockerfile .
 
   push_to_docker_hub:
     name: Push Docker image to Docker Hub
