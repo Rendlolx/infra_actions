@@ -39,10 +39,8 @@ jobs:
     steps:
     - name: build docker image
       run: |
-        # Вернемся в папку с Dockerfile
-        cd app/
         # Запуск сборки образа
-        docker build -t infra_workflows:latest .
+        docker build -t infra_workflows:latest -f Dockerfile .
 
   push_to_docker_hub:
     name: Push Docker image to Docker Hub
