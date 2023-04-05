@@ -40,7 +40,7 @@ jobs:
     - name: build docker image
       run: |
         # Вернемся в папку с Dockerfile
-        cd ..
+        cd app/
         # Запуск сборки образа
         docker build -t infra_workflows:latest .
 
